@@ -1,0 +1,361 @@
+%%%%%%%%%%%%  Generated using docx2latex.com  %%%%%%%%%%%%%%
+
+%%%%%%%%%%%%  v2.0.0-beta  %%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage[normalem]{ulem}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[backend=biber,
+style=numeric,
+sorting=none,
+isbn=false,
+doi=false,
+url=false,
+]{biblatex}\addbibresource{bibliography.bib}
+
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{wasysym}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{ragged2e}
+\usepackage[svgnames,table]{xcolor}
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{changepage}
+\usepackage{setspace}
+\usepackage{hhline}
+\usepackage{multicol}
+\usepackage{tabto}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[toc,page]{appendix}
+\usepackage[hidelinks]{hyperref}
+\usetikzlibrary{shapes.symbols,shapes.geometric,shadows,arrows.meta}
+\tikzset{>={Latex[width=1.5mm,length=2mm]}}
+\usepackage{flowchart}\usepackage[paperheight=11.69in,paperwidth=8.27in,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in,headheight=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\TabPositions{0.5in,1.0in,1.5in,2.0in,2.5in,3.0in,3.5in,4.0in,4.5in,5.0in,5.5in,6.0in,}
+
+\urlstyle{same}
+
+
+ %%%%%%%%%%%%  Set Depths for Sections  %%%%%%%%%%%%%%
+
+% 1) Section
+% 1.1) SubSection
+% 1.1.1) SubSubSection
+% 1.1.1.1) Paragraph
+% 1.1.1.1.1) Subparagraph
+
+
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+
+ %%%%%%%%%%%%  Set Depths for Nested Lists created by \begin{enumerate}  %%%%%%%%%%%%%%
+
+
+\setlistdepth{9}
+\renewlist{enumerate}{enumerate}{9}
+		\setlist[enumerate,1]{label=\arabic*)}
+		\setlist[enumerate,2]{label=\alph*)}
+		\setlist[enumerate,3]{label=(\roman*)}
+		\setlist[enumerate,4]{label=(\arabic*)}
+		\setlist[enumerate,5]{label=(\Alph*)}
+		\setlist[enumerate,6]{label=(\Roman*)}
+		\setlist[enumerate,7]{label=\arabic*}
+		\setlist[enumerate,8]{label=\alph*}
+		\setlist[enumerate,9]{label=\roman*}
+
+\renewlist{itemize}{itemize}{9}
+		\setlist[itemize]{label=$\cdot$}
+		\setlist[itemize,1]{label=\textbullet}
+		\setlist[itemize,2]{label=$\circ$}
+		\setlist[itemize,3]{label=$\ast$}
+		\setlist[itemize,4]{label=$\dagger$}
+		\setlist[itemize,5]{label=$\triangleright$}
+		\setlist[itemize,6]{label=$\bigstar$}
+		\setlist[itemize,7]{label=$\blacklozenge$}
+		\setlist[itemize,8]{label=$\prime$}
+
+\setlength{\topsep}{0pt}\setlength{\parskip}{8.04pt}
+\setlength{\parindent}{0pt}
+
+ %%%%%%%%%%%%  This sets linespacing (verticle gap between Lines) Default=1 %%%%%%%%%%%%%%
+
+
+\renewcommand{\arraystretch}{1.3}
+
+
+%%%%%%%%%%%%%%%%%%%% Document code starts here %%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+{\fontsize{22pt}{26.4pt}\selectfont \textbf{\uline{Description: -}}\par}\par
+
+{\fontsize{14pt}{16.8pt}\selectfont In this project, we have focussed on two types of cache design schemes. First one is Victim cache designed to reduce the overall miss ratio and second one is skewed associative cache which is an enhanced version of set associative cache.\par}\par
+
+\begin{itemize}
+	\item {\fontsize{14pt}{16.8pt}\selectfont \uline{Victim-cache: -}\textcolor[HTML]{222222}{ A victim cache is a hardware cache designed to decrease conflict misses and improve hit latency for direct-mapped caches. It is employed at the refill path of a Level 1 cache, such that any cache-line which gets evicted from the cache is cached in the victim cache. Thus, the victim cache gets populated only when data is thrown out of Level 1 cache. In case of a miss in Level 1, victim cache is looked up. If the resulting access is a hit, the contents of the Level 1 cache-line and the matching victim cache line are swapped.}\par}\par
+
+	\item {\fontsize{14pt}{16.8pt}\selectfont \textcolor[HTML]{222222}{\uline{Skewed-associative-cache: -}In skewed associative cache, two mapping function is used to map the address into different banks with different location which is unlike in conventional cache scheme. }An X way set-associative cache is built with X distinct banks. A line of data with base address D may be physically mapped on physical line f (D) in any of the distinct banks. This vision of a set-associative cache fits with its physical implementation: X banks of static memory RAMs. Different mapping functions are used for the distinct cache banks i.e., a line of data with base address D may be mapped on physical line f0(D) in cache bank 0 or in f1(D) in cache bank 1, etc. This multi-bank cache with such a mapping of the lines onto the distinct banks is called a skewed-associative cache. This project has implemented 2-way skewed associative cache.\par}
+\end{itemize}\par
+
+{\fontsize{14pt}{16.8pt}\selectfont We implemented both these cache designs in C++ language and compared them in terms of their hit/miss ratios.\par}\par
+
+{\fontsize{14pt}{16.8pt}\selectfont This project also compares the miss ratio of the above-mentioned cache design with direct mapped cache and set associative cache by plotting a graph between hit ratio vs size of cache for all the four cache schemes.\par}\par
+
+
+
+ %%%%%%%%%%%%  Starting New Page here %%%%%%%%%%%%%%
+
+\newpage
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+{\fontsize{22pt}{26.4pt}\selectfont \textbf{\uline{Why the Topic Is Interesting: -}}\par}\par
+
+{\fontsize{14pt}{16.8pt}\selectfont In our current semester course of CSN-221, we are studying about computer architecture, the first half of which focuses mainly on caches. So, we thought it interesting to get more practical knowledge about the implementation of caches as it will not only increase our basic knowledge about computer cache systems but it will also be helpful for the course. In case of confusions we can discuss them with our course classmates and professor. Our topic focuses more specifically towards skewed associative cache and victim cache. Again, victim cache seemed to be interesting because it is a more practical way to reduce the number of misses. Skewed associative cache also attracted our special attention as it was a kind of a more efficient type of set associative cache. At last, their comparison is made in terms of hit/miss ratio to determine which was a more practically efficient way of improving cache design.\par}\par
+
+{\fontsize{22pt}{26.4pt}\selectfont \textbf{\uline{Sources:}}\par}\par
+
+{\fontsize{14pt}{16.8pt}\selectfont This topic was discovered from this following research paper while searching for one of the Prescribed projects in the available projects list.\par}\par
+
+1.Suyog S. Kandalkar1, Yogesh S. Watile2\par
+
+\  High Performance Cache Architecture Using Victim Cache\par
+
+  \href{https://www.ijedr.org/papers/IJEDR1703068.pdf}{https://www.ijedr.org/papers/IJEDR1703068.pdf}\par
+
+2.Dimitrios Stiliadis, Anujan Varma \par
+
+\  Computer Engineering Department University of California \par
+
+\  Selective Victim Caching: A Method to Improve the Performance of Direct-Mapped Caches \par
+
+\  \href{http://www-unix.ecs.umass.edu/ece/koren/architecture/SVCache/sel_victim_caching.pdf}{http://www-unix.ecs.umass.edu/ece/koren/architecture/SVCache/sel\_victim\_caching.pdf}\par
+
+3. \href{https://www.researchgate.net/scientific-contributions/25489304_Andre_Seznec}{André Seznec}, \href{https://www.researchgate.net/profile/Francois_Bodin2}{François Bodin}\par
+
+\ \  Skewed-associative Caches.\par
+
+\ \  \href{http://course.ece.cmu.edu/~ece447/s13/lib/exe/fetch.php?media=p169-seznec.pdf}{http://course.ece.cmu.edu/$ \sim $ ece447/s13/lib/exe/fetch.php?media=p169-seznec.pdf}\par
+
+
+
+ %%%%%%%%%%%%  Starting New Page here %%%%%%%%%%%%%%
+
+\newpage
+{\fontsize{22pt}{26.4pt}\selectfont \textbf{\uline{Description of methods Used }}\par}\par
+
+
+\vspace{\baselineskip}
+{\fontsize{16pt}{19.2pt}\selectfont \uline{1.Implementation\ of\ Victim\ cache-    }\par}\par
+
+\setlength{\parskip}{0.0pt}
+\begin{itemize}
+	\item \uline{int startCache(Cache $\ast$ cache1, int number\_of\_sets, int associativity) -}This function makes the start of all cache with zeros.\par
+
+	\item \uline{int make\_upper(long unsigned address, int words\_per\_line, int bytes\_per\_word)-}This function get the line (upper) of a given address by the CPU and this upper is equal to the Tag information\par
+
+	\item \uline{int make\_index (int number\_of\_sets, long unsigned upper)-}This function generates the index for the set in the cache. This function generates the index for the set in the cache\par
+
+	\item \uline{int getPosUpper (Cache $\ast$ cache, int index, long unsigned line, int associativity)-}This function give the position in a set (by index) of a line with a determined upper\par
+
+	\item \uline{int there\_Are\_Space\_Set(Cache $\ast$ cache1, int index1, int associativity)-}This function verifies if are or aren't free blocks (lines) available in a set (by index1) in the cache memory.\par
+
+	\item \uline{void write\_cache (Cache $\ast$ cache1,Cache $\ast$ vicache1, Results $\ast$ result1, int index1, long unsigned line1, int data1, int associativity, char replacement\_policy)-}Writing the data in the set (by index) in the position that contains the upper (by line).\par
+
+	\item \uline{void read\_cache (Cache $\ast$ cache1,Cache $\ast$ vicache1, Results $\ast$ result1, int index1, long unsigned line1, int data1, int associativity, char$\ast$  replacement\_policy)-}Reading the data in the set (by index) in the position that contains the upper (by line).\par
+
+	\item \uline{void generate\_output(Results cache\_results, char $\ast$ output\_name)-}This function generates a formated output with the results of cache simulation\par
+
+	\item \uline{int main(int argc, char $\ast$ $\ast$ argv)\  -}Main method of the victim cache program. 
+\end{itemize}\par
+
+
+\vspace{\baselineskip}
+\setlength{\parskip}{8.04pt}
+{\fontsize{16pt}{19.2pt}\selectfont \uline{2.Implementation of Skewed cache-}\par}\par
+
+\setlength{\parskip}{0.0pt}
+\begin{itemize}
+	\item i\uline{nt startCache(Cache $\ast$ cache1, int number\_of\_sets, int associativity) –}This function makes the start of all cache with zeros.\par
+
+	\item \uline{int make\_upper(long unsigned address, int words\_per\_line, int bytes\_per\_word)-T}his function get the line (upper) of a given address by the CPU and this upper is equal to the Tag information\par
+
+	\item \uline{int power(int a, int b) –}Function to find power of a number.\par
+
+	\item \uline{int make\_index1 (int number\_of\_sets, long unsigned upper)-}This function generates the index for the set in the cache\par
+
+	\item \uline{int getPosUpper (Cache $\ast$ cache, int index1, int index2, long unsigned line, int associativity) –}This function give the position in a set (by index) of a line with a determined upper\par
+
+	\item \uline{int there\_Are\_Space\_Set(Cache $\ast$ cache1, int index1, int index2, int associativity)-}This function verifies if are or aren't free blocks (lines) available in a set (by index1) in the cache memory.\par
+
+	\item \uline{int random\_free\_space\_set (Cache $\ast$ cache1, int index1, int index2, int associativity) -}This function gives a block (line) free in a set (by index1) of the cache memory with no particular order. It returns the first block (position of line) free found, independent of its position at the set.\par
+
+	\item \uline{void write\_cache (Cache $\ast$ cache1,Cache $\ast$ vicache1, Results $\ast$ result1, int index1, long unsigned line1, int data1, int associativity, char replacement\_policy)--}Writing the data in the set (by index) in the position that contains the upper (by line).\par
+
+	\item \uline{void read\_cache (Cache $\ast$ cache1,Cache $\ast$ vicache1, Results $\ast$ result1, int index1, long unsigned line1, int data1, int associativity, char$\ast$  replacement\_policy)-}Reading the data in the set (by index) in the position that contains the upper (by line).\par
+
+	\item \uline{void generate\_output(Results cache\_results, char $\ast$ output\_name)-}This function generates a formated output with the results of cache simulation\par
+
+	\item \uline{int main(int argc, char $\ast$ $\ast$ argv) -}Main method of the Skewed cache program. 
+\end{itemize}\par
+
+\setlength{\parskip}{8.04pt}
+
+
+ %%%%%%%%%%%%  Starting New Page here %%%%%%%%%%%%%%
+
+\newpage
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\setlength{\parskip}{0.0pt}
+\setlength{\parskip}{8.04pt}
+{\fontsize{22pt}{26.4pt}\selectfont \textbf{\uline{Result}}\par}\par
+
+{\fontsize{14pt}{16.8pt}\selectfont After developing the simulator, the next step is to run on different inputs and test the efficiency of the different type of cache architecture. We used a trace file to pass on the inputs to the simulator that contains series of accesses that comprises an address followed by the type of instruction W or R.\par}\par
+
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 starts here %%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[H]
+	\begin{Center}
+		\includegraphics[width=2.45in,height=2.64in]{./media/image1.png}
+	\end{Center}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 Ends here %%%%%%%%%%%%%%%%%%%%
+
+\par
+
+{\fontsize{14pt}{16.8pt}\selectfont We then passed on the information to the simulator with the specifications of the cache we are using\par}\par
+
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 2 starts here %%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[H]
+	\begin{Center}
+		\includegraphics[width=1.5in,height=0.57in]{./media/image2.png}
+	\end{Center}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 2 Ends here %%%%%%%%%%%%%%%%%%%%
+
+\par
+
+{\fontsize{14pt}{16.8pt}\selectfont Then on running the simulator on linux terminal we get the output as shown below for different cache architecture as below\par}\par
+
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 3 starts here %%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[H]
+	\begin{Center}
+		\includegraphics[width=1.42in,height=0.97in]{./media/image3.png}
+	\end{Center}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 3 Ends here %%%%%%%%%%%%%%%%%%%%
+
+\par
+
+{\fontsize{14pt}{16.8pt}\selectfont On changing the size of L1 cache with the same trace file we obtain the below results\par}\par
+
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 4 starts here %%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[H]
+	\begin{Center}
+		\includegraphics[width=6.27in,height=0.98in]{./media/image4.png}
+	\end{Center}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 4 Ends here %%%%%%%%%%%%%%%%%%%%
+
+\par
+
+{\fontsize{14pt}{16.8pt}\selectfont A graph with the plot of the results is below\par}\par
+
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 5 starts here %%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[H]
+	\begin{Center}
+		\includegraphics[width=6.27in,height=2.88in]{./media/image5.png}
+	\end{Center}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 5 Ends here %%%%%%%%%%%%%%%%%%%%
+
+\par
+
+{\fontsize{14pt}{16.8pt}\selectfont We further did comparison by changing the size of victim cache and the performance improved with increase in its size.\par}\par
+
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 6 starts here %%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[H]
+	\begin{Center}
+		\includegraphics[width=6.27in,height=3.24in]{./media/image6.png}
+	\end{Center}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 6 Ends here %%%%%%%%%%%%%%%%%%%%
+
+
+
+ %%%%%%%%%%%%  Starting New Page here %%%%%%%%%%%%%%
+
+\newpage
+\par
+
+
+\vspace{\baselineskip}
+{\fontsize{22pt}{26.4pt}\selectfont \textbf{\uline{Discussion on the Results}}\par}\par
+
+{\fontsize{14pt}{16.8pt}\selectfont We compare the different cache architecture below \par}\par
+
+\begin{itemize}
+	\item {\fontsize{14pt}{16.8pt}\selectfont \uline{Victim And Direct Mapped }- As expected, incorporation of Victim Cache leads to improvement in efficiency as hit ratio increases. This happens because we don’t have to access the main memory at all times whenever there is a miss in L1 cache. This helps to reduce latency and the program will run faster.\par}\par
+
+	\item {\fontsize{14pt}{16.8pt}\selectfont \uline{2-Way Set Associative and 2-Way Skewed Associative. -}As Skewed Associative Cache uses a function that maps a block of main memory of cache in a different way than being random as in Set Associative Cache, it doesn’t utilize Spatial Locality in an efficient way and thus it performs lower than Set Associative Cache. \par}
+\end{itemize}\par
+
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+\tab 
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\printbibliography
+\end{document}
